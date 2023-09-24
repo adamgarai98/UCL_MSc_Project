@@ -1,6 +1,8 @@
 # Computer vision for the Digitisation of Pinned Insect Specimens
 
+
 ![Video0](https://github.com/adamgarai98/UCL_MSc_Project/blob/main/Misc/video0.gif)
+
 -
 This repository contains all the associated code (Jupyter notebooks implemented in Google Colabs)  and data for my Masters (Ecology and Data Science) thesis at UCL, partnered with the Natural History Museum, London.
 -

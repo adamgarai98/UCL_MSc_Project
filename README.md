@@ -24,7 +24,8 @@ Based on the view angle of the specimen (lateral or dorsal) two Xception models 
 The notebooks show how to load and use the models.
 
 ## Segmentation
-ADD image
+![Pic1](https://github.com/adamgarai98/UCL_MSc_Project/blob/main/Misc/Ephemera_Spec.png)
+
 I manually annotated and drew associated polygon masks around the specimen in each image using the [VGG Image Annotator (VIA)](https://www.robots.ox.ac.uk/~vgg/software/via/) tool. The annotations are then exported to [RoboFlow](https://roboflow.com/) for random image augmentations, and then exported for use within the notebook. Using [Detectron2,](https://github.com/facebookresearch/detectron2) an instance segmentation model was built and trained to segment specimens within the images. 
 
 The notebook shows how to load and use the model, and also has functionality for running predictions on videos.

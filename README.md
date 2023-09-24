@@ -7,7 +7,7 @@
 
 Using a small subset of ALICE generated data containing images of pinned insect specimens, I built proof-of-concept models that achieved high performance in image classification with a dorsal model average F1-score of 0.96 and lateral model average F1-score of 0.99 on the test set, and high performance is also shown in the instance segmentation model with an AP0.5:0.95 of 72.0 for bounding box predictions and 62.9 for segmentation masks for single class specimen predictions. Following these results I built a pipeline to combine these models. Both approaches were also tested on a new data source of images and videos I took of specimen drawers at the NHM. Implementation and results can be seen in the associated notebooks.
 
-**The notebooks provide information on how to run them, and are designed to be used within Google Colabs. Links to the original data and saved the saved classification model are provided below.**
+**The notebooks provide information on how to run them, and are designed to be used within Google Colabs. Links to the original data and the saved classification model are provided below.**
 
 # Dataset Creation and Analysis
   

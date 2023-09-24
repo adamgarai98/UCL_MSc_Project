@@ -1,2 +1,2 @@
 # UCL_MSc_Project
-<img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGM5MXl4OTY3eXFlc3ZtbGdoaHBraGZoMzF1bnRoOWwwMzN3aTZlOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/P4sbNtS1LCspbPiRRY/giphy.gif"  width="50%" height="50%">
+![Test](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcGM5MXl4OTY3eXFlc3ZtbGdoaHBraGZoMzF1bnRoOWwwMzN3aTZlOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/P4sbNtS1LCspbPiRRY/giphy.gif)

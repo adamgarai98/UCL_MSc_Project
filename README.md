@@ -16,23 +16,23 @@ Using a small subset of ALICE generated data containing images of pinned insect 
 [Download ALICE Data here.](https://drive.google.com/file/d/1e0UFL_vnp1OShL90CNA_9ci6WYUIc28x/view?usp=sharing)
 
 # Model Training and Evaluation
-These notebooks were used to train and evaluate my models. Saved models are also included within this repository however the segmentation model must be downloaded from the Google Drive link below:
+These notebooks were used to train and evaluate my models. Saved classification models and history files are also included within this repository however the saved segmentation model can be downloaded from the Google Drive link below:
 
 [Download Segmentation model here.](https://drive.google.com/file/d/1u2TuhlPGwn5A3oZDE6HO_wXwz0gxnorl/view?usp=sharing)
 
 ## Classification
-Based on the view angle of the specimen (lateral or dorsal) two Xception models were built using partial transfer learning to classify the specimens in the images at a species level. All results are shown within the notebooks.
+Based on the view angle of the specimen (lateral or dorsal) two Xception models were built using partial transfer learning to classify the specimens in the images at a species level. All results (training/validation graphs, confusion matricies, F1-Score etc) are shown within the notebooks.
 
-The notebooks show how to load and use the models.
+The notebooks show how to train, load and use the models.
 
 ## Segmentation
 ![Pic1](https://github.com/adamgarai98/UCL_MSc_Project/blob/main/Misc/three_crop.png)
 
-I manually annotated and drew associated polygon masks around the specimen in each image using the [VGG Image Annotator (VIA)](https://www.robots.ox.ac.uk/~vgg/software/via/) tool. The annotations are then exported to [RoboFlow](https://roboflow.com/) for random image augmentations, and then exported for use within the notebook. Using [Detectron2,](https://github.com/facebookresearch/detectron2) an instance segmentation model was built and trained to segment specimens within the images. 
+I manually annotated and drew associated polygon masks around the specimen in each image using the [VGG Image Annotator (VIA)](https://www.robots.ox.ac.uk/~vgg/software/via/) tool. The annotations are then exported to [RoboFlow](https://roboflow.com/) for random image augmentations, and then exported for use within the notebook after some processing. Using [Detectron2,](https://github.com/facebookresearch/detectron2) an instance segmentation model was built and trained to segment specimens within the images. 
 
-The notebook shows how to load and use the model, and also has functionality for running predictions on videos.
+The notebook shows how to train, load and use the model, and also has functionality for running predictions on videos. It also shows some results on non-ALICE data.
 
 # Combined Pipeline
-This notebook contains the code to first segment all specimens in an image, then pass the predicted bounding box images to the classification model.
+This notebook contains the code to first segment all specimens in an image, then pass the predicted bounding box images to the classification model. An example can be seen below:
 
 ![Pic2](https://github.com/adamgarai98/UCL_MSc_Project/blob/main/Misc/Picture1.png)
